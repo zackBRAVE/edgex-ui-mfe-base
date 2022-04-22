@@ -10,6 +10,7 @@ const routes = [
   },
   {
     path: '/dashboard',
+    // redirect的path值需与activeRule一致
     redirect: { path: '/' },
     name: 'dashboard',
     component: App,
