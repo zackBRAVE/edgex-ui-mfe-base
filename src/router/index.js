@@ -1,25 +1,66 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import App from '../App.vue'
 
 const routes = [
   {
     path: '/',
+    redirect: { path: '/edgex-ui-system' },
     name: 'home',
-    component: HomeView,
+    component: App,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/dashboard',
+    redirect: { path: '/' },
+    name: 'dashboard',
+    component: App,
   },
-];
+  {
+    path: '/system',
+    redirect: { path: '/edgex-ui-system' },
+    name: 'system',
+    component: App,
+  },
+  {
+    path: '/metadata',
+    redirect: { path: '/' },
+    name: 'metadata',
+    component: App,
+  },
+  {
+    path: '/data-center',
+    redirect: { path: '/' },
+    name: 'data-center',
+    component: App,
+  },
+  {
+    path: '/scheduler',
+    redirect: { path: '/' },
+    name: 'scheduler',
+    component: App,
+  },
+  {
+    path: '/notifications',
+    redirect: { path: '/' },
+    name: 'notifications',
+    component: App,
+  },
+  {
+    path: '/rule-engine',
+    redirect: { path: '/' },
+    name: 'rule-engine',
+    component: App,
+  },
+  {
+    path: '/app-service',
+    redirect: { path: '/' },
+    name: 'app-service',
+    component: App,
+  },
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+})
 
-export default router;
+export default router
