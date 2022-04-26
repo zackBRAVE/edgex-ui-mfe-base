@@ -9,6 +9,12 @@ const microApps = [
     // 子应用挂载的div的id，已设置为mfe，无需修改
     container: '#mfe',
   },
+  {
+    name: 'notifications-vue',
+    entry: 'http://43.138.60.144:8080/',
+    activeRule: '/notifications-vue',
+    container: '#mfe'
+  }
 ]
 
 export default microApps
