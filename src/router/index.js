@@ -41,7 +41,7 @@ const routes = [
   },
   {
     path: '/notifications',
-    redirect: { path: '/' },
+    redirect: { path: '/notifications-vue' },
     name: 'notifications',
     component: App,
   },
