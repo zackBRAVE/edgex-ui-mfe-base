@@ -14,6 +14,12 @@ const microApps = [
     entry: 'http://43.138.60.144:8080/',
     activeRule: '/notifications-vue',
     container: '#mfe'
+  },
+  {
+    name: 'app-service',
+    entry: process.env.VUE_APP_SVC_SYSTEM,
+    activeRule: '/app-service',
+    container: '#mfe',
   }
 ]
 
