@@ -53,7 +53,7 @@ const routes = [
   },
   {
     path: '/app-service',
-    redirect: { path: '/' },
+    redirect: { path: '/app-service/app-service-list' },
     name: 'app-service',
     component: App,
   },
